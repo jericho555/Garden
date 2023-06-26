@@ -1,7 +1,3 @@
-# USAGE
-# python train.py --dataset dataset
-from scipy.ndimage import gaussian_filter, map_coordinates
-from sklearn.calibration import calibration_curve
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import VGG16
@@ -17,7 +13,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix, roc_curve, roc_auc_score
 import tensorflow as tf
-from imutils import paths
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd

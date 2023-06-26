@@ -27,7 +27,7 @@ def extract_edges(image):
     return edges.flatten()
 
 
-# Load the cropped or annotated image
+# Load the cropped image
 image_path = 'new_dataset/banana/banana_images_1719.png'
 image = cv2.imread(image_path)
 

@@ -9,7 +9,7 @@ import os
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-d", "--dataset", type=str, default="orig",
+ap.add_argument("-d", "--dataset", type=str, default="resized",
                 help="path to input dataset")
 args = vars(ap.parse_args())
 

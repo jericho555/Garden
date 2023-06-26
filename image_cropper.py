@@ -9,7 +9,7 @@ ap.add_argument("-f", "--folder", type=str, default="resized", help="path to inp
 args = vars(ap.parse_args())
 
 # Create the output folder if it doesn't exist
-output_folder = "banan_images"
+output_folder = "banana"
 os.makedirs(output_folder, exist_ok=True)
 
 # Get a list of image files in the input folder
