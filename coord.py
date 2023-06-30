@@ -1,3 +1,4 @@
+# import necessary packages
 import cv2
 
 # Variables to store the coordinates
