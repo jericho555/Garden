@@ -54,7 +54,7 @@ def draw_label(image, label, bbox):
 
 
 # Set the path to the trained model file
-model_path = 'output/naive_bayes_model.pkl'
+model_path = 'output_model/naive_bayes_model.pkl'
 
 # Set the path to the image to be detected and identified
 image_path = 'new_dataset/banana/banana_images_27.png'

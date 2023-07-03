@@ -73,7 +73,7 @@ model = GaussianNB()
 model.fit(X_train, y_train)
 
 # Save the model to a file
-joblib.dump(model, 'output/naive_bayes_model.pkl')
+joblib.dump(model, 'output_model/naive_bayes_model.pkl')
 
 # Generate predictions on the test set
 y_pred = model.predict(X_test)

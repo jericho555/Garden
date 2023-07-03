@@ -31,11 +31,11 @@ tf.config.set_visible_devices(physical_devices[0], 'GPU')
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--plot", type=str, default="plot.png",
-                help="path to output loss/accuracy plot")
+                help="path to output_model loss/accuracy plot")
 ap.add_argument("-c", "--cm", type=str, default="cm_plot.png",
-                help="path to output confusion matrix plot")
-ap.add_argument("-m", "--model", type=str, default="output/crop_detector.model",
-                help="path to output model")
+                help="path to output_model confusion matrix plot")
+ap.add_argument("-m", "--model", type=str, default="output_model/crop_detector.model",
+                help="path to output_model model")
 args = vars(ap.parse_args())
 
 # initialize the initial learning rate, number of epochs to train for,

@@ -8,7 +8,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-f", "--folder", type=str, default="resized", help="path to input image folder")
 args = vars(ap.parse_args())
 
-# Create the output folder if it doesn't exist
+# Create the output_model folder if it doesn't exist
 output_folder = "banana"
 os.makedirs(output_folder, exist_ok=True)
 
@@ -69,7 +69,7 @@ for image_file in image_files:
     counter = image_file.split(".")[0]  # Extract the counter from the filename
     output_filename = f"cropped_{counter}.jpg"
 
-    # Save the cropped image to the output folder
+    # Save the cropped image to the output_model folder
     output_path = os.path.join(output_folder, output_filename)
     cv2.imwrite(output_path, cropped)
 

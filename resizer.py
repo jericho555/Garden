@@ -2,11 +2,11 @@
 import os
 import cv2
 
-# Define the input and output directories
+# Define the input and output_model directories
 input_folder = "data"  # Specify the path to the input folder containing the images
-output_folder = "resized"  # Specify the path to the output folder to save the resized images
+output_folder = "resized"  # Specify the path to the output_model folder to save the resized images
 
-# Create the output folder if it doesn't exist
+# Create the output_model folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
 
 # Get the list of image files in the input folder

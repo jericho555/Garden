@@ -13,7 +13,7 @@ import os
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--images", type=str, default="new_dataset",
                 help="path to out input directory of images")
-ap.add_argument("-m", "--model", type=str, default="output/crop_detector.model",
+ap.add_argument("-m", "--model", type=str, default="output_model/crop_detector.model",
                 help="path to pre-trained model")
 args = vars(ap.parse_args())
 
@@ -76,13 +76,13 @@ for p in imagePaths:
     cv2.putText(orig, label, (3, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                 color, 2)
 
-    # add the output image to our list of results
+    # add the output_model image to our list of results
     results.append(orig)
 
 # create a montage using 128x128 "tiles" with 10 rows and 5 columns
 montage = build_montages(results, (128, 128), (10, 5))[0]
 
-# save show the output montage
+# save show the output_model montage
 cv2.imwrite("Crop-predictions.png", montage)
 cv2.imshow("Crop Detection Results", montage)
 cv2.waitKey(0)

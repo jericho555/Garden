@@ -1,0 +1,48 @@
+# Garden Monitoring Tool
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## Overview
+The Garden Monitoring Tool is a computer vision and machine learning project aimed at automating crop identification and assessing the presence of grass in a garden. The tool provides efficient monitoring, quick assessment of crop health, and helps maintain a healthy garden environment. The project includes two tasks: Task 1 using traditional machine learning techniques and Task 2 utilizing deep learning and transfer learning approaches.
+
+## Key Features
+- Automatic crop identification in garden images or videos
+- Detection and assessment of grass presence
+- Comparative analysis of traditional machine learning vs. deep learning approaches
+- Performance evaluation metrics for accuracy, precision, recall, and F1 scores
+
+## Installation
+1. Clone the repository:
+git clone https://github.com/jericho555/Garden.git
+
+2. pip install -r requirements.txt
+
+2. Run Task 1 (traditional machine learning):
+    train_naive_bayes.py
+    test-NaiveModel.py
+
+3. Run Task 2 (deep learning and transfer learning):
+    train_ResNet50_CNN.py
+    test_ResNet50_detector.py
+
+
+## Dataset
+- The dataset used in this project consists of labeled garden images and videos.
+- Please refer to the dataset documentation for more information. Use the following scripts
+    video2image_extractor.py
+    cropper.py
+    resizer.py
+    smote.py
+    gen_color_histograms.py
+
+
+## Contributing
+Contributions to the Garden Monitoring Tool are welcome! If you would like to contribute, please follow these steps:
+1. Fork the repository
+2. Create a new branch for your feature or bug fix
+3. Make your changes and commit them
+4. Push your changes to your fork
+5. Submit a pull request
+
+## License
+This project is licensed under the [MIT License](LICENSE).
