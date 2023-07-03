@@ -30,9 +30,9 @@ tf.config.set_visible_devices(physical_devices[0], 'GPU')
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-p", "--plot", type=str, default="plot.png",
+ap.add_argument("-p", "--plot", type=str, default="results/plot.png",
                 help="path to output_model loss/accuracy plot")
-ap.add_argument("-c", "--cm", type=str, default="cm_plot.png",
+ap.add_argument("-c", "--cm", type=str, default="results/cm_plot.png",
                 help="path to output_model confusion matrix plot")
 ap.add_argument("-m", "--model", type=str, default="output_model/crop_detector.model",
                 help="path to output_model model")
