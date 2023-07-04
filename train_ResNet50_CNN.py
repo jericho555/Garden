@@ -1,6 +1,6 @@
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import VGG16
+from tensorflow.keras.applications import ResNet50
 from tensorflow.keras.layers import AveragePooling2D
 from tensorflow.keras.layers import Dropout
 from tensorflow.keras.layers import Flatten
@@ -100,9 +100,9 @@ aug = ImageDataGenerator(
     horizontal_flip=True,
     fill_mode="nearest")
 
-# load the VGG16 network, ensuring the head FC layer sets are left
+# load the ResNet network, ensuring the head FC layer sets are left
 # off
-baseModel = VGG16(weights="imagenet", include_top=False,
+baseModel = ResNet50(weights="imagenet", include_top=False,
                   input_tensor=Input(shape=(224, 224, 3)))
 
 # construct the head of the model that will be placed on top of the
