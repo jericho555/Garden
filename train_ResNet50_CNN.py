@@ -79,7 +79,7 @@ data = np.array(data) / 255.0
 labels = np.array(labels)
 
 # partition the data into training and testing splits using 80% of
-# the data for training and the remaining 20% for testing
+# the data for training and the remaining 15% for testing
 (trainX, testX, trainY, testY) = train_test_split(data, labels,
                                                   test_size=0.15, stratify=labels, random_state=42)
 
