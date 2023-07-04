@@ -103,7 +103,7 @@ aug = ImageDataGenerator(
 # load the ResNet network, ensuring the head FC layer sets are left
 # off
 baseModel = ResNet50(weights="imagenet", include_top=False,
-                  input_tensor=Input(shape=(224, 224, 3)))
+                     input_tensor=Input(shape=(224, 224, 3)))
 
 # construct the head of the model that will be placed on top of the
 # the base model
